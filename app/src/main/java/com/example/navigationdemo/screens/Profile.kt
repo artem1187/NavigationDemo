@@ -24,7 +24,7 @@ fun Profile(onClearBackStack: () -> Unit) {
                 style = MaterialTheme.typography.headlineSmall
             )
             Spacer(modifier = Modifier.size(30.dp))
-            Button(onClick = {
+            Button(onClick = {onClearBackStack()
             }) {
                 Text(text = "Go Home")
             }
